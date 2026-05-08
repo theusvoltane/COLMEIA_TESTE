@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-05-08T23:51:55.665Z",
+    "end": "2026-05-08T23:51:57.658Z",
+    "duration": 1993,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2fb7b0fb-46d9-4f22-a536-738faab0aa7c",
+      "title": "",
+      "fullFile": "cypress/e2e/teste-de-login-errado.cy.js",
+      "file": "cypress/e2e/teste-de-login-errado.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "712ea9b5-a94e-4c54-9edf-bcb5ec3580e2",
+          "title": "Pagina de Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve exibir mensagem de erro ao tentar fazer login com credenciais inválidas",
+              "fullTitle": "Pagina de Login Deve exibir mensagem de erro ao tentar fazer login com credenciais inválidas",
+              "timedOut": null,
+              "duration": 806,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[name=\"email\"]').type('qa2@test.com'); //Aqui, o teste está inserindo um endereço de email invalidono campo de email.\ncy.get('[name=\"password\"]').type('123456'); //Aqui, o teste está inserindo uma senha válida no campo de senha.\ncy.get('.p-16 > .flex-col > .flex').click(); //Aqui, o teste está clicando no botão de login.\ncy.get('[name=\"email\"] > .text-red-500').should('contain', 'Usuário ou senha inválidos'); // Aqui, seu teste está verificando se a mensagem de erro \"Usuário ou senha inválidos\" é exibida corretamente na página após a tentativa de login com credenciais inválidas.",
+              "err": {},
+              "uuid": "8cea9e4a-81d8-4cbe-85d8-1ac611e8ff8d",
+              "parentUUID": "712ea9b5-a94e-4c54-9edf-bcb5ec3580e2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8cea9e4a-81d8-4cbe-85d8-1ac611e8ff8d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 806,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

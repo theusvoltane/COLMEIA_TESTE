@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-05-08T23:52:19.501Z",
+    "end": "2026-05-08T23:52:21.710Z",
+    "duration": 2209,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "68277b8b-0894-4c6e-9a7a-6b763d64a445",
+      "title": "",
+      "fullFile": "cypress/e2e/teste-do-botao-Banco.cy.js",
+      "file": "cypress/e2e/teste-do-botao-Banco.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "af228ec1-d352-44d9-8c89-16fe21608df3",
+          "title": "Acessa O Bancos de Dados",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Botão deveria navegar para o Banco de Dados e exibir o título",
+              "fullTitle": "Acessa O Bancos de Dados Botão deveria navegar para o Banco de Dados e exibir o título",
+              "timedOut": null,
+              "duration": 1085,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.p-2 > .flex').click(); // Aqui, o teste está clicando no menu de campanha.\ncy.url().should('include', '/dashboard/campanha'); // Verifica se a URL mudou corretamente para a página de campanha\ncy.get('menu > .flex > :nth-child(1) > a').click(); // Aqui, o teste está clicando no primeiro item do menu, que é o link para a página de Bancos de Dados.\ncy.url().should('include', '/dashboard/campanha/bancos-de-dados'); // Verifica se a URL mudou corretamente para a página de Bancos de Dados\ncy.get('.text-3xl').should('contain', 'Bancos de dados'); // Verifica se o título da página contém \"Bancos de Dados\"",
+              "err": {},
+              "uuid": "be71a274-aac2-45fc-85de-40197e57a611",
+              "parentUUID": "af228ec1-d352-44d9-8c89-16fe21608df3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "be71a274-aac2-45fc-85de-40197e57a611"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1085,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

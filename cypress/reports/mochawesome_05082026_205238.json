@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-05-08T23:52:32.308Z",
+    "end": "2026-05-08T23:52:38.604Z",
+    "duration": 6296,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5fbf6047-0924-4e83-aef3-ff63ad64eca9",
+      "title": "",
+      "fullFile": "cypress/e2e/teste-do-botao-forms.cy.js",
+      "file": "cypress/e2e/teste-do-botao-forms.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f892c18e-af11-4b43-823d-ff0911939682",
+          "title": "Acessa O Colmeia Forms",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Botão deveria navegar para Colmeia Forms e exibir o título",
+              "fullTitle": "Acessa O Colmeia Forms Botão deveria navegar para Colmeia Forms e exibir o título",
+              "timedOut": null,
+              "duration": 5149,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.p-2 > .flex').click(); // Aqui, o teste está clicando no menu de campanha.\ncy.url().should('include', '/dashboard/campanha'); // Verifica se a URL mudou corretamente para a página de campanha\ncy.get(':nth-child(2) > a').click(); // Aqui, o teste está clicando no segundo item do menu, que é o link para a página de Colmeia Forms.\ncy.url().should('include', '/dashboard/campanha/colmeia-forms'); // Verifica se a URL mudou corretamente para a página de Colmeia Forms\ncy.get('.text-3xl').should('contain', 'Colmeia Forms'); // Verifica se o título da página contém \"Colmeia Forms\"",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.text-3xl`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.text-3xl`, but never found it.\n    at Context.eval (webpack://colmeia_teste/./cypress/e2e/teste-do-botao-forms.cy.js:11:24)",
+                "diff": null
+              },
+              "uuid": "46ad9579-543e-4601-8416-9382ee621fe6",
+              "parentUUID": "f892c18e-af11-4b43-823d-ff0911939682",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "46ad9579-543e-4601-8416-9382ee621fe6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5149,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

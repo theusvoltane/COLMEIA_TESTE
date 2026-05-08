@@ -1,0 +1,23 @@
+{
+  "name": "colmeia_teste",
+  "version": "1.0.0",
+  "description": "Teste Técnico para a Colmeia. Cenários de teste automatizados que validem as funcionalidades e evidenciem possíveis falhas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theusvoltane/COLMEIA_TESTE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theusvoltane/COLMEIA_TESTE/issues"
+  },
+  "homepage": "https://github.com/theusvoltane/COLMEIA_TESTE#readme",
+  "devDependencies": {
+    "mochawesome": "^7.1.4"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-05-08T23:52:23.959Z",
+    "end": "2026-05-08T23:52:29.955Z",
+    "duration": 5996,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "84f7ce44-902f-47a5-a6dd-eea29dfa5011",
+      "title": "",
+      "fullFile": "cypress/e2e/teste-do-botao-candidato.cy.js",
+      "file": "cypress/e2e/teste-do-botao-candidato.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e82cf766-f6ab-4ffa-89d9-8c1c29f35ac9",
+          "title": "Acessa menu do candidato",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Campo deveria ser um botão",
+              "fullTitle": "Acessa menu do candidato Campo deveria ser um botão",
+              "timedOut": null,
+              "duration": 4914,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.ml-3 > .flex').should('contain', 'candidato'); // Verifica se o elemento contém o texto \"candidato\"\ncy.get('.ml-3 > .flex').parent().should('have.prop', 'tagName', 'BUTTON'); // Verifica se o elemento pai é um botão",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<span.flex.items-center.gap-1.text-sm>' to contain 'candidato'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<span.flex.items-center.gap-1.text-sm>' to contain 'candidato'\n    at Context.eval (webpack://colmeia_teste/./cypress/e2e/teste-do-botao-candidato.cy.js:7:28)",
+                "diff": null
+              },
+              "uuid": "12bd2c68-924e-44d7-a5f3-74afd6fc38f2",
+              "parentUUID": "e82cf766-f6ab-4ffa-89d9-8c1c29f35ac9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "12bd2c68-924e-44d7-a5f3-74afd6fc38f2"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4914,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

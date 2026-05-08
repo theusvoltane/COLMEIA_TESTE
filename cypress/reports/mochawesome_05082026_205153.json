@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-05-08T23:51:47.516Z",
+    "end": "2026-05-08T23:51:53.324Z",
+    "duration": 5808,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "09ef9e64-0126-4477-a5a4-420f4e25c67e",
+      "title": "",
+      "fullFile": "cypress/e2e/teste-de-esqueceu-senha.cy.js",
+      "file": "cypress/e2e/teste-de-esqueceu-senha.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6043841f-8840-4d36-beb5-83c515579a20",
+          "title": "Pagina de Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve permitir criar uma nova senha",
+              "fullTitle": "Pagina de Login Deve permitir criar uma nova senha",
+              "timedOut": null,
+              "duration": 4670,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[name=\"email\"]').type('qa@test.com');\ncy.get('.mt-4').click(); // Clica no link \"Esqueci minha senha\"\ncy.url().should('include', '/forgot-password'); // Verifica se a URL mudou para a página de recuperação",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://teste-colmeia-qa.colmeia-corp.com/' to include '/forgot-password'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://teste-colmeia-qa.colmeia-corp.com/' to include '/forgot-password'\n    at Context.eval (webpack://colmeia_teste/./cypress/e2e/teste-de-esqueceu-senha.cy.js:8:13)",
+                "diff": null
+              },
+              "uuid": "ae9a78a3-46bc-46a3-adc0-998bb75b915d",
+              "parentUUID": "6043841f-8840-4d36-beb5-83c515579a20",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ae9a78a3-46bc-46a3-adc0-998bb75b915d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 4670,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

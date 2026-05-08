@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-05-08T23:51:28.857Z",
+    "end": "2026-05-08T23:51:38.212Z",
+    "duration": 9355,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "145720b7-caac-4ae9-8b76-cfdb3ab56ee6",
+      "title": "",
+      "fullFile": "cypress/e2e/teste-arquivar-de-items.cy.js",
+      "file": "cypress/e2e/teste-arquivar-de-items.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5796d346-f634-446c-a740-6c61dd9b9d35",
+          "title": "Arquivar Item nos Bancos de Dados",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deveria arquivar um item nos Bancos de Dados",
+              "fullTitle": "Arquivar Item nos Bancos de Dados Deveria arquivar um item nos Bancos de Dados",
+              "timedOut": null,
+              "duration": 7980,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('tbody > :nth-child(1) > :nth-child(1)').contains(_itens.itens[0].item).should('be.visible'); // Aqui, o teste está verificando se o item adicionado está visível na tabela de itens dos Bancos de Dados.\ncy.get(':nth-child(1) > :nth-child(3) > div > .text-blue-100').click(); // Aqui, o teste está clicando no botão de arquivar para o primeiro item da tabela.\ncy.get('.py-1 > :nth-child(1) > .justify-center').click(); // Aqui, o teste está clicando para ver os itens arquivados.\ncy.get('tbody > tr > :nth-child(1)').contains(_itens.itens[0].item).should('be.visible'); // Aqui, o teste está verificando se o item arquivado está visível na tabela de itens arquivados dos Bancos de Dados.",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `tbody > tr > :nth-child(1)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `tbody > tr > :nth-child(1)`, but never found it.\n    at Context.eval (webpack://colmeia_teste/./cypress/e2e/teste-arquivar-de-items.cy.js:18:7)",
+                "diff": null
+              },
+              "uuid": "adb65a95-c259-4f15-92f2-3342c91f914b",
+              "parentUUID": "5796d346-f634-446c-a740-6c61dd9b9d35",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "adb65a95-c259-4f15-92f2-3342c91f914b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7980,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
